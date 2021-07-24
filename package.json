@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/Savith2000/matchingApp/issues"
   },
-  "homepage": "https://github.com/Savith2000/matchingApp#readme"
+  "homepage": "https://github.com/Savith2000/matchingApp#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
