@@ -12,15 +12,30 @@ let user = [
     routeName:"jason",
     name: "Jason",
     number1: 1,
-    number2: 5,
-    number3: 3,
-    number4: 4,
-    number5: 5,
-    number6: 3,
+    number2: 1,
+    number3: 1,
+    number4: 1,
+    number5: 1,
+    number6: 1,
     number7: 1,
+    number8: 1,
+    number9: 1,
+    number10: 1,
+  },
+
+  {
+    routeName:"savith",
+    name: "Savith",
+    number1: 2,
+    number2: 2,
+    number3: 2,
+    number4: 2,
+    number5: 2,
+    number6: 2,
+    number7: 2,
     number8: 2,
-    number9: 3,
-    number10: 4,
+    number9: 2,
+    number10:2,
   },
 ];
 
@@ -29,6 +44,8 @@ let user = [
 app.get("/", function (req, res) {
   res.sendFile(path.join(__dirname, "index.html"));
 });
+
+
 
 app.get("/user", function (req, res) {
   return res.json(user);
@@ -63,6 +80,8 @@ app.post("/user", function (req, res) {
 
   res.json(newuser);
 });
+
+
 
 app.listen(PORT, function () {
   console.log("App listening on PORT " + PORT);
